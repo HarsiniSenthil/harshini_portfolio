@@ -1,210 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Harsini S G | Portfolio</title>
 
-<style>
+<link rel="stylesheet" href="style.css">
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
-}
-
-body{
-background:#f6f8fb;
-color:#333;
-line-height:1.6;
-}
-
-/* NAVBAR */
-
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 8%;
-background:white;
-box-shadow:0 2px 10px rgba(0,0,0,0.05);
-}
-
-nav h2{
-font-size:22px;
-}
-
-nav ul{
-display:flex;
-list-style:none;
-gap:20px;
-}
-
-nav a{
-text-decoration:none;
-color:#333;
-}
-
-/* HERO */
-
-.hero{
-padding:100px 8%;
-text-align:center;
-}
-
-.hero h1{
-font-size:42px;
-margin-bottom:10px;
-}
-
-.hero p{
-font-size:18px;
-max-width:650px;
-margin:auto;
-color:#555;
-}
-
-/* SECTION */
-
-section{
-padding:70px 8%;
-}
-
-section h2{
-text-align:center;
-margin-bottom:40px;
-font-size:28px;
-}
-
-/* ABOUT */
-
-.about{
-max-width:750px;
-margin:auto;
-text-align:center;
-color:#555;
-}
-
-/* SKILLS */
-
-.skills{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:12px;
-}
-
-.skill{
-background:white;
-padding:10px 16px;
-border-radius:6px;
-box-shadow:0 4px 10px rgba(0,0,0,0.05);
-font-size:14px;
-}
-
-/* PROJECTS */
-
-.project-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
-}
-
-.project-card{
-background:white;
-padding:25px;
-border-radius:10px;
-box-shadow:0 6px 18px rgba(0,0,0,0.08);
-transition:0.3s;
-}
-
-.project-card:hover{
-transform:translateY(-8px);
-}
-
-.project-card h3{
-margin-bottom:10px;
-}
-
-.project-card p{
-font-size:14px;
-color:#555;
-}
-
-.buttons{
-margin-top:15px;
-}
-
-.buttons a{
-text-decoration:none;
-background:#2563eb;
-color:white;
-padding:7px 14px;
-border-radius:6px;
-font-size:13px;
-margin-right:8px;
-}
-
-/* CONTACT */
-
-.contact{
-text-align:center;
-}
-
-.contact a{
-display:block;
-margin-top:8px;
-text-decoration:none;
-color:#2563eb;
-}
-
-/* FOOTER */
-
-footer{
-text-align:center;
-padding:20px;
-color:#777;
-font-size:14px;
-}
-
-</style>
 </head>
 
 <body>
 
+<header>
+
 <nav>
-<h2>Harsini</h2>
+
+<h2 class="logo">Harsini</h2>
 
 <ul>
+
 <li><a href="#about">About</a></li>
 <li><a href="#skills">Skills</a></li>
 <li><a href="#projects">Projects</a></li>
 <li><a href="#contact">Contact</a></li>
+
 </ul>
+
 </nav>
 
-<section class="hero">
+<div class="hero">
+
 <h1>Harsini S G</h1>
 
 <p>
-Biomedical Instrumentation Engineering student passionate about healthcare technology,
-data analysis, and AI-driven medical systems.
+Biomedical Instrumentation Engineering student interested in
+healthcare technology, AI, and data analysis.
 </p>
-</section>
 
-<section id="about">
-<h2>About Me</h2>
-
-<div class="about">
-<p>
-Analytical Biomedical Instrumentation Engineering student with experience in healthcare
-systems, clinical equipment testing, and research analysis. Interested in combining
-technology, data, and AI to improve healthcare systems.
-</p>
 </div>
 
+</header>
+
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p class="about-text">
+
+Analytical Biomedical Instrumentation Engineering student with
+experience in healthcare systems, clinical equipment testing,
+and data analysis. Interested in combining technology and
+healthcare to improve medical systems.
+
+</p>
+
 </section>
+
 
 <section id="skills">
 
@@ -212,88 +66,88 @@ technology, data, and AI to improve healthcare systems.
 
 <div class="skills">
 
-<div class="skill">Data Analysis</div>
-<div class="skill">Python</div>
-<div class="skill">Java</div>
-<div class="skill">Scilab</div>
-<div class="skill">Biomedical Equipment</div>
-<div class="skill">Digital Image Processing</div>
-<div class="skill">Embedded Systems</div>
-<div class="skill">Research Analysis</div>
+<span>Python</span>
+<span>Java</span>
+<span>Scilab</span>
+<span>Biomedical Equipment</span>
+<span>Digital Image Processing</span>
+<span>Embedded Systems</span>
+<span>Data Analysis</span>
 
 </div>
 
 </section>
+
 
 <section id="projects">
 
 <h2>Projects</h2>
 
-<div class="project-grid">
+<div class="project-container">
+
 
 <div class="project-card">
+
 <h3>OT Light Monitoring System</h3>
 
 <p>
-System designed to monitor operation theatre lighting performance
-and provide maintenance alerts.
+System designed to monitor operation theatre lighting
+performance and maintenance alerts.
 </p>
 
-<div class="buttons">
-<a href="#">GitHub</a>
-</div>
+<a href="#">View Project</a>
 
 </div>
+
 
 <div class="project-card">
+
 <h3>Digital Pet Embedded System</h3>
 
 <p>
 Interactive embedded system project demonstrating
-sensor interaction and microcontroller behavior.
+sensor interaction and microcontroller logic.
 </p>
 
-<div class="buttons">
-<a href="#">GitHub</a>
-</div>
+<a href="#">View Project</a>
 
 </div>
+
 
 <div class="project-card">
-<h3>FedGlu Research Analysis</h3>
+
+<h3>FedGlu Research Study</h3>
 
 <p>
-Research analysis of federated learning-based glucose
-prediction algorithms for healthcare AI.
+Research analysis on federated learning based
+glucose forecasting algorithms.
 </p>
 
-<div class="buttons">
-<a href="#">Details</a>
-</div>
+<a href="#">View Project</a>
 
 </div>
+
 
 </div>
 
 </section>
+
 
 <section id="contact">
 
 <h2>Contact</h2>
 
-<div class="contact">
-
 <p>Email: harsinisg17@gmail.com</p>
-<a href="#">GitHub</a>
-<a href="#">LinkedIn</a>
-
-</div>
 
 </section>
 
+
 <footer>
-© 2026 Harsini S G
+
+<p>© 2026 Harsini S G</p>
+
 </footer>
 
 </body>
+
 </html>
