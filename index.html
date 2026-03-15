@@ -1,69 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Harsini S G | Biomedical Engineer</title>
+
+<title>Harsini S G | Portfolio</title>
 
 <style>
 
-body{
-font-family: Arial, sans-serif;
+*{
 margin:0;
-background:#f4f6f9;
-color:#333;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
 }
 
-header{
-background:#1e3a5f;
+body{
+background:linear-gradient(135deg,#1e3a8a,#2563eb);
 color:white;
-padding:40px;
-text-align:center;
+line-height:1.6;
 }
+
+/* NAVBAR */
 
 nav{
-background:#0f2a44;
-padding:10px;
-text-align:center;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+}
+
+nav h2{
+font-size:24px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:20px;
 }
 
 nav a{
 color:white;
-margin:15px;
 text-decoration:none;
-font-weight:bold;
+font-size:16px;
 }
+
+/* HERO */
+
+.hero{
+padding:100px 10%;
+text-align:center;
+}
+
+.hero h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:18px;
+max-width:600px;
+margin:auto;
+opacity:0.9;
+}
+
+/* SECTION */
 
 section{
-padding:40px;
-max-width:1000px;
-margin:auto;
+padding:70px 10%;
 }
 
-h2{
-color:#1e3a5f;
+section h2{
+text-align:center;
+margin-bottom:40px;
+font-size:30px;
 }
+
+/* ABOUT */
+
+.about{
+max-width:800px;
+margin:auto;
+text-align:center;
+}
+
+/* SKILLS */
 
 .skills{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
 gap:15px;
 }
 
-.card{
+.skill{
 background:white;
-padding:20px;
-border-radius:10px;
-box-shadow:0 2px 8px rgba(0,0,0,0.1);
+color:black;
+padding:10px 15px;
+border-radius:6px;
+font-size:14px;
 }
 
-footer{
-background:#1e3a5f;
+/* PROJECTS */
+
+.project-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.project-card{
+background:white;
+color:black;
+padding:25px;
+border-radius:10px;
+box-shadow:0 10px 20px rgba(0,0,0,0.2);
+transition:0.3s;
+}
+
+.project-card:hover{
+transform:translateY(-10px);
+}
+
+.project-card h3{
+margin-bottom:10px;
+}
+
+.project-card p{
+font-size:14px;
+}
+
+.buttons{
+margin-top:15px;
+}
+
+.buttons a{
+text-decoration:none;
+background:#2563eb;
 color:white;
+padding:8px 14px;
+border-radius:6px;
+margin-right:8px;
+font-size:13px;
+}
+
+/* CONTACT */
+
+.contact{
+text-align:center;
+}
+
+.contact a{
+color:white;
+text-decoration:none;
+display:block;
+margin-top:10px;
+}
+
+/* FOOTER */
+
+footer{
 text-align:center;
 padding:20px;
-margin-top:40px;
+font-size:14px;
+opacity:0.8;
 }
 
 </style>
@@ -72,151 +173,153 @@ margin-top:40px;
 
 <body>
 
-<header>
-<h1>Harsini S G</h1>
-<p>Biomedical Instrumentation Engineer | Healthcare Data & AI Enthusiast</p>
-</header>
+<!-- NAVBAR -->
 
 <nav>
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#experience">Experience</a>
-<a href="#projects">Projects</a>
-<a href="#education">Education</a>
-<a href="#contact">Contact</a>
+
+<h2>Harsini</h2>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
 </nav>
 
-<section id="about">
-<h2>About Me</h2>
+<!-- HERO -->
+
+<section class="hero">
+
+<h1>Harsini S G</h1>
+
 <p>
-Aspiring biomedical engineer focused on healthcare technology, medical devices, and data-driven solutions for modern healthcare systems.
+Biomedical Instrumentation Engineering student passionate about
+healthcare technology, data analysis, and AI-driven solutions
+for medical systems.
 </p>
+
 </section>
 
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<div class="about">
+
+<p>
+Analytical Biomedical Instrumentation Engineering student with
+experience in healthcare systems, clinical equipment testing,
+and data analysis. Interested in combining technology and
+healthcare to improve medical systems and patient care.
+</p>
+
+</div>
+
+</section>
+
+<!-- SKILLS -->
+
 <section id="skills">
+
 <h2>Skills</h2>
 
 <div class="skills">
 
-<div class="card">
-<h3>Programming</h3>
-<p>Python (Basic)<br>Scilab</p>
-</div>
+<div class="skill">Data Analysis</div>
+<div class="skill">Python</div>
+<div class="skill">Java</div>
+<div class="skill">Scilab</div>
+<div class="skill">Biomedical Equipment</div>
+<div class="skill">Digital Image Processing</div>
+<div class="skill">Embedded Systems</div>
+<div class="skill">Research Analysis</div>
 
-<div class="card">
-<h3>Data Tools</h3>
-<p>Microsoft Excel<br>Data Cleaning<br>Data Analysis</p>
-</div>
-
-<div class="card">
-<h3>Biomedical Systems</h3>
-<p>ICU Equipment<br>Ventilators<br>OT Equipment</p>
-</div>
-
-<div class="card">
-<h3>Professional Skills</h3>
-<p>Research Analysis<br>Technical Documentation<br>Quality Verification</p>
-</div>
-
-</div>
-</section>
-
-<section id="experience">
-<h2>Experience</h2>
-
-<div class="card">
-<h3>Production & Quality Intern – Akas Infusions</h3>
-<p>Dec 2025 – Feb 2026</p>
-<ul>
-<li>Analyzed production datasets using Excel and Scilab</li>
-<li>Supported ISO 13485 compliance activities</li>
-<li>Prepared technical documentation and quality reports</li>
-</ul>
-</div>
-
-<br>
-
-<div class="card">
-<h3>Biomedical Engineer – KG Hospital</h3>
-<p>Aug 2025 – Oct 2025</p>
-<ul>
-<li>Assisted in research on ventilators and ICU systems</li>
-<li>Conducted testing and performance evaluation of biomedical devices</li>
-<li>Supported healthcare data documentation</li>
-</ul>
-</div>
-
-<br>
-
-<div class="card">
-<h3>Biomedical Engineer Intern – NIMHANS</h3>
-<p>Jun 2025</p>
-<ul>
-<li>Supported data validation for clinical datasets</li>
-<li>Observed AI-assisted medical imaging pipelines</li>
-<li>Prepared workflow documentation</li>
-</ul>
 </div>
 
 </section>
+
+<!-- PROJECTS -->
 
 <section id="projects">
+
 <h2>Projects</h2>
 
-<div class="card">
-<h3>NeuroStride – Wearable Gait Monitoring System</h3>
+<div class="project-grid">
+
+<div class="project-card">
+
+<h3>OT Light Monitoring System</h3>
+
 <p>
-Developed an IMU-based wearable system for analyzing human gait using
-acceleration and angular velocity data. Implemented signal preprocessing,
-feature extraction, and classification for fall risk detection.
+System designed to monitor operation theatre lighting
+performance and maintenance requirements.
 </p>
+
+<div class="buttons">
+<a href="#">GitHub</a>
 </div>
 
-<br>
-
-<div class="card">
-<h3>Embedded Heat Therapy Device</h3>
-<p>
-Designed a microcontroller-based wearable device delivering localized heat
-therapy for muscle cramps with controlled temperature regulation.
-</p>
 </div>
 
-<br>
+<div class="project-card">
 
-<div class="card">
-<h3>Tactical Hazardous Operations Robot</h3>
+<h3>Digital Pet Embedded System</h3>
+
 <p>
-Developed a robotic platform integrating sensors and embedded systems for
-remote navigation in hazardous environments.
+Interactive embedded system project demonstrating
+sensor interaction and microcontroller logic.
 </p>
+
+<div class="buttons">
+<a href="#">GitHub</a>
+</div>
+
+</div>
+
+<div class="project-card">
+
+<h3>FedGlu Research Study</h3>
+
+<p>
+Research analysis of federated learning based
+glucose forecasting algorithms for healthcare AI.
+</p>
+
+<div class="buttons">
+<a href="#">Research</a>
+</div>
+
+</div>
+
 </div>
 
 </section>
 
-<section id="education">
-<h2>Education</h2>
-
-<div class="card">
-<p><b>B.E Biomedical Instrumentation Engineering</b><br>
-Avinashilingam Institute, Coimbatore<br>
-2023 – Present</p>
-
-<p><b>B.Voc Medical Equipment Technology</b><br>
-Avinashilingam Institute, Coimbatore<br>
-2019 – 2022</p>
-</div>
-
-</section>
+<!-- CONTACT -->
 
 <section id="contact">
+
 <h2>Contact</h2>
 
-<div class="card">
+<div class="contact">
+
 <p>Email: harsinisg17@gmail.com</p>
-<p>Languages: English | Tamil | Kannada</p>
-<p>GitHub: Add your GitHub link here</p>
-<p>LinkedIn: Add your LinkedIn link here</p>
+<a href="https://github.com/">GitHub</a>
+<a href="https://linkedin.com/">LinkedIn</a>
+
 </div>
 
+</section>
 
+<footer>
+
+© 2026 Harsini S G
+
+</footer>
+
+</body>
+</html>
